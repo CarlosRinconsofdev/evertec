@@ -109,7 +109,7 @@ A continuacion se comparte evidencia de la inegracion para el consumo del servic
 ### Punto 2
 
 - **Requestid:** Es el identificador de cada solicitud de transaccion que se realiza dentro de la plataforma, el cual sirve para diferentes aspectos, como el rastreo y gestion de las transacciones para el seguimiento de estado y resolución de posibles problemas que ocurran.
-Este dato se puede repetir cuando se realiza una solicitud para una sesion de pago con dispersión por ser una solicitud con multiples destinatarios de pago.
+Este dato se puede repetir cuando se realiza una solicitud para una sesion de pago con dispersión por ser una solicitud con multiples destinatarios de pago, ademas del pago por recurrencia en donde se genera una solicitud de pago que reiteradamente va ser objeto de transacción.
 
 
  Los posibles estados que puede presentar una trasaccion son diferentes gracias a la fase en que se encuentre el proceso o situaciones adversas que afecten el proceso, estos son los siguientes:
@@ -125,6 +125,13 @@ Este dato se puede repetir cuando se realiza una solicitud para una sesion de pa
 **``PARTIAL_EXPIRED``**: Es el estado que presenta una sesión de pago parcial cuando el usuario solo pago una fracción del valor total de solicitado y el tiempo disponible para completar el pago ha caducado, es un estado final de proceso.
 
 - **Preautorizacion** Es una sesión de pago en la cual el usuario completa el proceso y el valor de dicha transaccion queda reservado o congelado para que posteriormente por medio de validación, pueda ser modificado, confirmado o cancelado. Está basado en un flujo de trabajo `CHECKIN` y `CHECKOUT`. Un ejemplo claro para este tipo de sesión es el utilizado por las aplicaciones de transporte rentado, ya que cuando el usuario realiza el pago con tarjeta crédito, la aplicación genera la reserva del valor posible total en el momento que se toma  el servicio, pero cuando termina el servicio, este valor total puede cambiar por lo cual requiere validacion si hay modificaciones en el valor inicial por distancia o tiempo  o si el servicio fue cancelado. 
+
+- La diferencia entre el cobro por suscripción y el cobro por recurrencia consta en el tipo de procedimiento que se aplica para cada uno
+
+  El cobro  por recurrencia es un proceso en el cual se genera una solicitud con un valor total de pago determinado y el usuario genera el proceso de pago con tarjeta de credito, posterior a esto se realizan los pagos automaticos, este cobro define concretamente la periodicidad con que esta transacción se va a realizar, para este efecto se definen las transacciones por medio del parametro `recurring`.
+
+  El cobro por suscripcion es en el que se genera un token, es decir el usuario registra un producto financiero como tarjeta credito/debito, el producto es seguramente almacenado por medio de tokenizacion, y luego este medio de pago puede ser usado para realizar los procesos de pagos en la pasarela.
+
 
 
 
