@@ -97,7 +97,26 @@ Ademas de estos datos se requiere proporcionar los siguientes datos considerado 
 
 **userAgent:** Describe el navegador o software del usuario.
  
-A continuacion se comparte evidencia de la consumo del servicio api de placetopay por medio de la herramienta Postman, sin embargo el código fuente para determinar los datos requeridos para la solicitud está basado en JavaScript y bash, y estos fueron ejecutados en SO linux-Ubuntu.
-Además se realizaron solicitudes por medio de terminal para la verificacion de los resultados.
+A continuacion se comparte evidencia de la inegracion para el consumo del servicio api de placetopay por medio de la herramienta Postman, sin embargo el código fuente para determinar los datos requeridos para la solicitud está basado en JavaScript y bash, y estos fueron ejecutados en SO linux-Ubuntu.
 
 <image src="evidencia1.png" alt="evidencia1">
+
+### Punto 2
+
+- **Requestid:** Es el identificador de cada solicitud de transaccion que se realiza dentro de la plataforma, el cual sirve para diferentes aspectos, como el rastreo y gestion de las transacciones para el seguimiento de estado y resolución de posibles problemas que ocurran.
+Este dato se puede repetir cuando se realiza una solicitud para una sesion de pago con dispersión por ser una solicitud con multiples destinatarios de pago.
+
+Los posibles estados que puede presentar una trasaccion son diferentes gracias a la fase en que se encuentre el proceso o situaciones adversas que afecten el proceso, estos son los siguientes:
+
+**``PENDING``** : Es el estado en que se encuentra una transacción en el momento de validacion y confirmacion del pago, tambien puede presentarse este cuando un pago usuario tiene oportunidad de realizar un nuevo intento en la transaccion ya que posiblemente fue rechazada. En general este estado indica que el proceso transaccional no ha concluido.
+
+**``APPROVED``**: Es el estado en que se encuentra una transaccion que ha sido aprobada y su proceso culminó con exito, es un estado final del proceso.
+
+**``REJECTED``**: Es el estado que presenta la transacción cuando esta ha sido cancelada ya sea por el usuario o su periodo a expirado sin obtener un pago aprobado, es un estado final del proceso.
+
+**``APPROVED_PARTIAL``**: Es el estado que presenta una sesion de pago parcial y el usuario ha pagado una parte del valor total solicitado  y el valor restante está pendiente, aunque todavía sería posible completar la totalidad del valor de pago con otras transacciones.
+
+**``PARTIAL_EXPIRED``**: Es el estado que presenta una sesión de pago parcial cuando el usuario solo pago una fracción del valor total de solicitado y el tiempo disponible para completar el pago ha caducado, es un estado final de proceso.
+
+
+
