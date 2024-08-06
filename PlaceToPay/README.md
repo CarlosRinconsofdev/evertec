@@ -90,11 +90,14 @@ Ademas de estos datos se requiere proporcionar los siguientes datos considerado 
 
 
 **expiration:** Indica la fecha y la hora en la que la sesion de pago debe expirar.
+
 **returnUrl:** Se refiere a la url a la cual será redigirido el usuario luego de realizar el pago.
+
 **ipAdress:** Reconoce la direccion ip desde cual se realiza la solicitud de pago.
+
 **userAgent:** Describe el software usuario.
  
 
 
 
-![evidencia1](/evidencia1.png)
+![1](/evidencia1.png)
