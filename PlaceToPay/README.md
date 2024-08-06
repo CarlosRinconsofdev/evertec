@@ -43,10 +43,15 @@ metodo post.
 
 Para realizar el proceso transaccional por el cual deseamos consumir el servicio api de placetopay es necesario autenticarse con las credenciales otorgadas por el administrador de la aplicacion, **login** y **secretKey** las cuales sirven de insumo para los datos requeridos al momento de la autenticacion, estos son:
 
+
 **login:** Es el dato para la identificacion del sitio, suministrado previamente.
+
 **secretkey:** Es la credencial que brinda la seguridad al sitio, suministrado previamente.
+
 **seed:** Es la fecha en que se ha generado la autenticacion. Requiere formato ISO8601.
+
 **nonce:** Dato que identifica cada petición como unica. Requiere codificacion en base64.
+
 **trankey:** Se obtiene concatenando los datos nonce + seed + secretkey. Requiere codificacion en base64
 
 El código fuente para obtener los datos segun sus requerimientos se encuentra dentro del fichero ![fichero](credenciales.js), el cual debe ejecutarse ```node credenciales.js``` al momento de suministrar los datos ya que su disponibilidad para la peticion es de 5 minutos. 
