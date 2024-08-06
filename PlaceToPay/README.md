@@ -49,7 +49,7 @@ Para realizar el proceso transaccional por el cual deseamos consumir el servicio
 **nonce:** Dato que identifica cada petición como unica. Requiere codificacion en base64.
 **trankey:** Se obtiene concatenando los datos nonce + seed + secretkey. Requiere codificacion en base64
 
-El código fuente para obtener los datos segun sus requerimientos se encuentra dentro del fichero ![fichero](credenciales.js), el cual debe ejecutarse **node credenciales.js** al momento de suministrar los datos ya que su disponibilidad para la peticion es de 5 minutos. 
+El código fuente para obtener los datos segun sus requerimientos se encuentra dentro del fichero ![fichero](credenciales.js), el cual debe ejecutarse ```node credenciales.js``` al momento de suministrar los datos ya que su disponibilidad para la peticion es de 5 minutos. 
 
 ```
 const crypto = require('crypto');
@@ -85,7 +85,7 @@ Ademas de estos datos se requiere proporcionar los siguientes datos considerado 
 **payment:** Contiene la información del pago que el usuario desea realizar.
  
 - referencía: Informacion que nos indica a que tipo de transaccion se refiere. 
-- Descripción: Contextualiza sobre la opracion (Por ejemplo en esta ocasion es un prueba).
+- description: Contextualiza sobre la opracion (Por ejemplo en esta ocasion es un prueba).
 - amount: contiene el valor del monto y el tipo de moneda.
 
 
@@ -95,9 +95,9 @@ Ademas de estos datos se requiere proporcionar los siguientes datos considerado 
 
 **ipAdress:** Reconoce la direccion ip desde cual se realiza la solicitud de pago.
 
-**userAgent:** Describe el software usuario.
+**userAgent:** Describe el navegador o software del usuario.
  
-
-
+A continuacion de brinda evidencia de la consumo del servicio api de placetopay por medio de la herramienta Postman, sin embargo el código fuente para determinar los datos requeridos para la solicitud está basado en JavaScript y bash, y estos fueron ejecutados en SO linux-Ubuntu.
+Además se realizaron solicitudes por medio de terminal para la verificacion de los resultados.
 
 <image src="evidencia1.png" alt="evidencia1">
