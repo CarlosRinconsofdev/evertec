@@ -100,4 +100,4 @@ Ademas de estos datos se requiere proporcionar los siguientes datos considerado 
 
 
 
-![1](/evidencia1.png)
+<image src="evidencia1.png" alt="evidencia1">
