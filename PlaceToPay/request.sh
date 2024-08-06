@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Variables
-LOGIN="2d9eaf1e662518756a3d78806543af5b"
-TRANKEY="uw9xOlpmPPMlehvbXKkBiW1EWHXMEYuoRZScq/RGJNA="
-NONCE="MjQ5NTc3"
-SEED="2024-08-05T23:14:40.212Z"
+LOGIN="662518756a3d78806543af5b"
+TRANKEY="XwIBTYtIEDQ4Z5EUTgCK/n80aVBOxrNm4jHPb4NrRHQ="
+NONCE="ODAxMDA5"
+SEED="2024-08-06T05:46:18.366Z"
 
 # Solicitud POST usando curl
 curl -X POST "https://checkout-test.placetopay.com/api/session" \
@@ -16,8 +16,11 @@ curl -X POST "https://checkout-test.placetopay.com/api/session" \
              "nonce": "'"$NONCE"'",
              "seed": "'"$SEED"'"
            },
-           "amount": 10000,
-           "currency": "USD",
-           "returnUrl": "https://mywebsite.com/return",
-           "cancelUrl": "https://mywebsite.com/cancel"
-         }'
+          "payment": {
+          "reference": "1122334455",
+          "description": "Prueba",
+          "amount": {
+            "currency": "USD",
+            "total": 100
+         },
+  }

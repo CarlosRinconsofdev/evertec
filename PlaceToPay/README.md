@@ -144,9 +144,7 @@ Este dato se puede repetir cuando se realiza una solicitud para una sesion de pa
 
 ### Punto 4
 
-![alt text](image.png)
-
-
+<image src="/flujograma.jpg" alt="flujo1">
 
 
 
