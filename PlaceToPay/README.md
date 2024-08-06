@@ -138,6 +138,12 @@ Este dato se puede repetir cuando se realiza una solicitud para una sesion de pa
 
 - Mucho gusto, soy Carlos Rincon Alvarez, analista de soporte para la implementacion de placetopay de Evertec, ante las dificultades que estan presentando, me gustaría consultarle cual es el mensaje error que recibe al momento de iniciar el proceso transaccional. De acuerdo a lo que me indica debemos hacer una actualización en el archivo de configuración para las peticiones del procesamiento transaccional, ya que no se está definiendo el dato preciso con el que se determina la caducidad de cada transaccion, permitame unos minutos mientras lo resulvo. De acuerdo ahora ha sido actualizado este archivo y puede retomar con las transacciones, se han realizado las pruebas pertinentes y estas validan que se está generando el proceso correctamente. Gracias.
 
+- Apreciado usuario, me dispongo a brindarle una explicacion clara del funcionamiento de nuestros servicios, me gustaría saber cuales son las dudas o dificultades que encuentra en el proceso para la implementacion del proyecto, y así puedo resolver con mayore enfoque las dificultades, para esto ademas puedo generar un flujo de trabajo sobre como se realiza cada uno de los pasos para la implementacion del proyeco. Me interesa mucho poder dejar el proyecto ejecutandose correctamente en su compañía.
+
+- Sin embargo si considera que mi metodolodía no es buena o no cumple sus expectativas, me excuso en nombre de Evertec y quiero que nos reunamos con el lider de soporte de implementacion y encontremos una solucion a esta dificultad, ya que estoy idoneamente capacitado para brindarle la solución en la implementación del proyecto sin embargo es oportuno realizar una valoracion a mi competencia en el proceso de capacitación a los usuarios. Recuerde que estamos para brindarle soluciones a su medida.
+
+### Punto 4
+
 
 
 
