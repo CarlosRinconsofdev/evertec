@@ -106,6 +106,8 @@ A continuacion se comparte evidencia de la inegracion para el consumo del servic
 
 <image src="evidencia1.png" alt="evidencia1">
 
+<image src="evidencia2.png" alt="evidencia2">
+
 ### Punto 2
 
 - **Requestid:** Es el identificador de cada solicitud de transaccion que se realiza dentro de la plataforma, el cual sirve para diferentes aspectos, como el rastreo y gestion de las transacciones para el seguimiento de estado y resolución de posibles problemas que ocurran.
