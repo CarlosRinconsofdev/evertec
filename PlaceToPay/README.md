@@ -97,6 +97,7 @@ Ademas de estos datos se requiere proporcionar los siguientes datos considerado 
 
 **userAgent:** Describe el navegador o software del usuario.
  
-A continuacion de brinda evidencia de la consumo del servicio api de placetopay por medio de la herramienta Postman, sin embargo el código fuente para determinar los datos requeridos para la solicitud está basado en JavaScript y bash, y estos fueron ejecutados en SO linux-Ubuntu.
+A continuacion se comparte evidencia de la consumo del servicio api de placetopay por medio de la herramienta Postman, sin embargo el código fuente para determinar los datos requeridos para la solicitud está basado en JavaScript y bash, y estos fueron ejecutados en SO linux-Ubuntu.
+Además se realizaron solicitudes por medio de terminal para la verificacion de los resultados.
 
 <image src="evidencia1.png" alt="evidencia1">
