@@ -132,6 +132,12 @@ Este dato se puede repetir cuando se realiza una solicitud para una sesion de pa
 
   El cobro por suscripcion es en el que se genera un token, es decir el usuario registra un producto financiero como tarjeta credito/debito, el producto es seguramente almacenado por medio de tokenizacion, y luego este medio de pago puede ser usado para realizar los procesos de pagos en la pasarela.
 
+  ### Punto 3
+
+  - Mucho gusto, soy Carlos Rincon Alvarez, analista de soporte para la implementacion de placetopay, estoy para brindarle solución a las dificultades que está presentado con la plataforma. Validando el error que me indica que está apareciendo al momento de generar las transacciones puedo indicarle que es una falla tecnica en el proceso de validacion de las credenciales de usuario y gracías a esto es sencillo recuperar el procesamiento de las transacciones. Me indica las credencíales que se le han suministrado en el correo electronico con asunto: Credenciales de registro. De acuerdo a la información que me brinda los datos fueron modificados, sin embargo en el este momento estoy reestableciendo los valores. Acabo de realizar la prueba de integración y el proceso transaccional me brinda un estatus ok con el mensaje: la peticion se ha procesado correctamente, lo que indica que puede seguir generando los procesos transaccionales, espero haber cumplido a satisfaccion con sus requerimientos, o si tiene alguna otra dificultad con la plataforma me puede indicar. Lo invito a continuar usando nuestros servicios, ya que podemos brindarle un soporte tecnico oportuno y eficaz, agradezco por la confianza que ha depositado en nosotros para realizar sus procesos transaccionales.Estaré atento ante cualquier duda o eventualidad que se le presente. Gracias.
+
+
+
 
 
 
